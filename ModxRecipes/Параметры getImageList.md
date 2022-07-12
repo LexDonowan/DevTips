@@ -14,8 +14,8 @@
 
 `[[+total]]` — общее число элементов (можно изменить через *&totalVar*)
 
-`[[+property.name]]` — выведет параметр с именем &name=`` в вызове *getImageList*. Например, при вызове:<br>
-  ``[[getImageList? &tvname=`slider` &tpl=`@CODE: [[+image]]`]]``<br>
+`[[+property.name]]` — выведет параметр с именем *&name=\`\`* в вызове *getImageList*. Например, при вызове:<br>
+  `[[getImageList? &tvname=\`slider\` &tpl=\`@CODE: [[+image]]\`]]`<br>
   плейсхолдер `[[+property.tvname]]` будет иметь значение «slider».
 
 
@@ -46,7 +46,7 @@
 
 `&toPlaceholder` — сохранить вывод в плейсхолдер
 
-`&toSeparatePlaceholders` — сохранить каждую запись в отдельный плейсхолдер. Например, ``&toSeparatePlaceholders=`item` `` создаст плейсхолдеры: `[[+item.1]]`, 
+`&toSeparatePlaceholders` — сохранить каждую запись в отдельный плейсхолдер. Например, `&toSeparatePlaceholders=\`item\`` создаст плейсхолдеры: `[[+item.1]]`, 
 `[[+item.2]]` и т.д.
 
 `&outputSeparator` — разделитель между результатами
