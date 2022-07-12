@@ -121,4 +121,10 @@ $itemArray['thumbnail'] = str_replace(array('%2F'.$context.'%2F'),'',$item->get(
 $itemArray['image'] = str_replace(array('%2F'.$context.'%2F'),'',$item->get('image',$imageProperties));
 ```
 
-https://mycode.in.ua/modx/samples/gallery-helpers.html
+<https://mycode.in.ua/modx/samples/gallery-helpers.html>
+
+<br>
+<br>
+
+---
+[Оглавление](https://github.com/LexDonowan/DevTips/blob/main/ModxRecipes/README.md)
