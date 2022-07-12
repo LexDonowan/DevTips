@@ -13,8 +13,9 @@
 ));
 ```
 
-2. добавить в MIGX поле inputTVtype: resourcelist
-`Configs: {"parents":46}`
+2. добавить в MIGX поле 
+    `inputTVtype: resourcelist` 
+    `Configs: {"parents":46}`
 
 ---
 [Оглавление](https://github.com/LexDonowan/DevTips/blob/main/ModxRecipes/README.md)
