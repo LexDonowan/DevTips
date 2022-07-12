@@ -48,7 +48,7 @@
 
 `&toPlaceholder` — сохранить вывод в плейсхолдер
 
-`&toSeparatePlaceholders` — сохранить каждую запись в отдельный плейсхолдер. Например, ` &toSeparatePlaceholders=\`item\` ` создаст плейсхолдеры: `[[+item.1]]`, 
+`&toSeparatePlaceholders` — сохранить каждую запись в отдельный плейсхолдер. Например, `` &toSeparatePlaceholders=`item` `` создаст плейсхолдеры: `[[+item.1]]`, 
 `[[+item.2]]` и т.д.
 
 `&outputSeparator` — разделитель между результатами
