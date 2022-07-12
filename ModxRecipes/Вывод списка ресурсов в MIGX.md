@@ -15,7 +15,7 @@
 
 2. добавить в MIGX поле
 
-    `inputTVtype: resourcelist` 
+    `inputTVtype: resourcelist` <br>
     `Configs: {"parents":46}` 
 
 
