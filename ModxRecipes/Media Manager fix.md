@@ -32,7 +32,7 @@ https://github.com/Sterc/mediamanager
 
 5. core/components/mediamanager/model/mediamanager/classes/files.class.php
 
-	1. Make relative path
+	1) Make relative path
 	 line 453:
 	 ```
 	 $filePath = $this->removeSlashes($source['baseUrl']) . DIRECTORY_SEPARATOR;
@@ -55,7 +55,7 @@ https://github.com/Sterc/mediamanager
 	<img src="/[[+file.path]]" class="crop" />
 	```
 
-	2. Translit uploaded files
+	2) Translit uploaded files
 	replace function `public function sanitizeFileName($fileName)` with:
 
 	```
@@ -94,7 +94,7 @@ https://github.com/Sterc/mediamanager
 
 6. Activate media Manager:
 	1) Create new media source and add parameter `mediamanagerSource` with value `1`.
-	2) Edit Filesystem media source and add parameter `mediamanagerSource` with value `1`. Then Media Manager will be work. Then Edit Filesystem again and set `mediamanagerSource` to 0.
+	2) Edit Filesystem media source and add parameter `mediamanagerSource` with value `1`. Then Media Manager will be work. Then Edit Filesystem again and set `mediamanagerSource` to `0`.
 
 
 
