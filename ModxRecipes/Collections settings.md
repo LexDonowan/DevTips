@@ -5,7 +5,7 @@ TV name (prefixed with **tv_**, TV name must NOT contain a dot)
 #### Editors
 As an editor can be used any valid *xtype* (string) or *JSON* object.
 
-#### Examples:
+Examples:
 
 - `textfield`
 - `textarea`
