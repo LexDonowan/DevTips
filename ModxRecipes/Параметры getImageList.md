@@ -15,7 +15,9 @@
 `[[+total]]` — общее число элементов (можно изменить через *&totalVar*)
 
 `[[+property.name]]` — выведет параметр с именем *&name=\`\`* в вызове *getImageList*. Например, при вызове:<br>
-  ``[[getImageList? &tvname=`slider` &tpl=`@CODE: [[+image]]`]]``<br>
+  ```
+  [[getImageList? &tvname=`slider` &tpl=`@CODE: [[+image]]`]]
+  ```
   плейсхолдер `[[+property.tvname]]` будет иметь значение «slider».
 
 
