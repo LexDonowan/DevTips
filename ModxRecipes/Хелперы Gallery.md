@@ -6,7 +6,7 @@
 [[!getGalleryAlbumName? &id=`2`]]
 ```
 
-```
+```php
 $id = isset($_GET['album']) ? $_GET['album'] : $modx->getOption('id', $scriptProperties, false);
 if(!$id) return false;
 $data = $modx->call('galItem','getList',array(&$modx,array('album' => $id)));
@@ -18,7 +18,7 @@ return $data['album']['name'];
 [[!getGalleryAllTags? &tpl=`tpl.gallery.tag`]]
 ```
 
-```
+```php
 $tpl = $modx->getOption('tpl',$scriptProperties,'galTag');
 $ids = array();
 $tags = array();
@@ -63,7 +63,7 @@ return $output;
 
 ### Выводим заданный список альбомов
 Как бы то не странно, родной сниппет не имеет параметра &albums (аналогичного &resources в pdoResources), т.е. не умеет выводить список альбомов. Я добавил этот ф-нал:
-```
+```php
 [[!GalleryAbumList? &albums=`2,4,5`]]
 //перед 
 //$rowTpl = $modx->getOption('rowTpl',$scriptProperties,'galAlbumRowTpl'); 
@@ -86,7 +86,7 @@ if(in_array($albumArray['id'], $albumList)){
 [[+album:albumCover]]
 ```
 
-```
+```php
 //комбинированный вариант вызова
 [[+album:albumCover:default=`[[+tv_image]]`:phpthumbon=`w=360&h=270&zc=1`]]
 <?php
@@ -113,7 +113,7 @@ if($result){
 
 ### Мультиязычность и Gallery
 Для нормальной работы правим сниппет Gallery (стр.131)
-```
+```php
 //$itemArray['thumbnail'] = $item->get('thumbnail',$thumbProperties);
 //$itemArray['image'] = $item->get('thumbnail',$imageProperties);
 $context = $modx->context->get('key');
